@@ -1,0 +1,15 @@
+.notes{
+    height:auto;
+    width:auto;
+    margin-top: 35px;
+    background-color:white;
+    text-align:center;
+    border-radius: 5px;
+    
+}
+.notes:hover{
+    box-shadow: 2px 2px 2px lightgray,-2px -2px 2px lightgray ;
+}
+.notescon{
+    height:90%;
+}
