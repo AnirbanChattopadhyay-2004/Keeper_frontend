@@ -9,7 +9,7 @@ git clone https://github.com/AnirbanChattopadhyay-2004/Keeper_frontend.git
 cd Keeper_frontend
 ### ``` Install all the dependencies: ```
 npm install
-### ``` Add a .env file and add your mongoDB url in it```
-## ``` VITE_url="your url" ```
+### ``` Add a .env file and add the Keeper_backend url running locally on any port  in it```
+## ``` VITE_url="http://localhost:3000" ```
 # Running the File Locally on System
 ## ``` npm run dev ```
