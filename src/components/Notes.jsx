@@ -11,7 +11,8 @@ import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 
 export default function Notes({notessearch})
 {
-    const url="http://localhost:3000/api/"
+    // const url="http://localhost:3000/api/"
+    const url=import.meta.env.VITE_url+"/api/"
     const [title,setTitle]=useState("");
     const [note,setNote]=useState("");
     console.log(notessearch)

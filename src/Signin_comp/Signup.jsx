@@ -9,6 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 export default function Signup()
 {
+  const url=import.meta.env.VITE_url
     const [name,setName]=useState("");
     const [pwd,setPwd]=useState("");
     const[colorU,setColorU]=useState("primary");
@@ -23,7 +24,7 @@ export default function Signup()
   };
     async function handleClick(){
         try{
-        const res=await axios.post("http://localhost:3000/api/auth/signup",{username:name,password:pwd});
+        const res=await axios.post(url+"/api/auth/signup",{username:name,password:pwd});
         
         setName("");
         setPwd("");

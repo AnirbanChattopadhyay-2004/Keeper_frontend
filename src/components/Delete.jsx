@@ -8,8 +8,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function Delete(){
-    const url="http://localhost:3000/api/"
-  
+    // const url="http://localhost:3000/api/"
+    const url=import.meta.env.VITE_url+"/api/"
     const [notes,setNotes]=useState([]);
       
       

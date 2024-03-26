@@ -49,6 +49,7 @@ export default function Header({filter})
   function handlenavigate()
   {
     localStorage.removeItem("token")
+    localStorage.removeItem("name")
     navigate("/signlog")
   }
     const element= 

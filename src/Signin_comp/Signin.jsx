@@ -9,13 +9,14 @@ export default function Signin()
 {
     const [name,setName]=useState("");
     const [pwd,setPwd]=useState("");
+    const url=import.meta.env.VITE_url
     const navigate=useNavigate()
     const[colorU,setColorU]=useState("primary");
     const[colorP,setColorP]=useState("primary");   
     const[p,setP]=useState("");
     async function handleClick(){
         try{
-        const res=await axios.post("http://localhost:3000/api/auth/login",{username:name,password:pwd});
+        const res=await axios.post(url+"/api/auth/login",{username:name,password:pwd});
         localStorage.setItem("token",res.data.token);
         const fname=name.substring(0,name.indexOf("@"))
         localStorage.setItem("name",fname)

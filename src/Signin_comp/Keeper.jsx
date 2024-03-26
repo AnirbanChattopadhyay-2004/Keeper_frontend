@@ -10,13 +10,13 @@ import Archieve from "../components/Archieve.jsx"
 import axios from "axios"
 export default function Keeper()
 {
- 
+ const url=import.meta.env.VITE_url
   const [notess,setNotes]=useState([]);
   async function filter(searchval)
   {
     if(searchval){
       console.log(searchval)
-      const res=await axios.get(`http://localhost:3000/api/search?q=${searchval}`,
+      const res=await axios.get(`${url}/api/search?q=${searchval}`,
       
       { headers: {'token': localStorage.getItem('token')}})
       // console.log(res.data.notes)
