@@ -1,8 +1,13 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Keeper
+   Note Keeper applications aim to provide users with a digital solution for organizing, managing, and accessing their notes effectively, whether for personal or professional use.
+# Installation
+  ## Cloning the repository
+  To clone the Keeper repository and use it in your React project, follow these steps:
+### ``` Clone the Repository:```
+git clone https://github.com/AnirbanChattopadhyay-2004/Keeper_frontend.git
+### ``` Navigate to Keeper_frontend folder: ```
+cd Keeper_frontend
+### ``` Install all the dependencies: ```
+npm install
+# Running the File Locally on System
+## ``` npm run dev ```
