@@ -23,9 +23,11 @@ export default function Signup()
     event.preventDefault();
   };
     async function handleClick(){
+      
+      const newurl = `${url}/api/auth/signup`;
         try{
-        const res=await axios.post(url+"/api/auth/signup",{username:name,password:pwd});
-        
+        const res=await axios.post(newurl,{username:name,password:pwd});
+        console.log(res)
         setName("");
         setPwd("");
        setColorU("primary")
@@ -66,7 +68,7 @@ export default function Signup()
      
         }
         catch(err){
-            
+            console.log(err)
             setColorU("error")
             setColorP("error")
             toast.error('User already present', {

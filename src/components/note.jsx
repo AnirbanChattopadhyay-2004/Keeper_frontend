@@ -14,8 +14,8 @@ export default function Note(props)
       <CardMedia
             component="img"
             height={props.image?"auto":"0"}
-            image={"../../public/"+props.image}
-          
+            image={props.image}
+            
             
       />
       <CardContent>
