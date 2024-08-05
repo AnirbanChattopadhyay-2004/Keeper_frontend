@@ -8,7 +8,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function Archieve(){
-    const u=import.meta.env.VITE_url
+    const u=import.meta.env.VITE_url || "http://localhost:3000"
     const url=u+"/api/"
   
     const [notes,setNotes]=useState([]);

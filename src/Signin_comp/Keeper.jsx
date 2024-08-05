@@ -10,7 +10,7 @@ import Archieve from "../components/Archieve.jsx"
 import axios from "axios"
 export default function Keeper()
 {
- const url=import.meta.env.VITE_url
+ const url=import.meta.env.VITE_url || "http://localhost:3000"
   const [notess,setNotes]=useState([]);
   async function filter(searchval)
   {
@@ -23,7 +23,7 @@ export default function Keeper()
      setNotes(res.data.notes)}
      else
      {
-      const res=await axios.get('http://localhost:3000/api/notes', { headers: {'token': localStorage.getItem('token')}})
+      const res=await axios.get(url+'/api/notes', { headers: {'token': localStorage.getItem('token')}})
       setNotes(res.data.notes)
      }
      

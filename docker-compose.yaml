@@ -1,0 +1,29 @@
+version: "3.8"
+services: 
+  backend:
+    image: "surjo123/keeper_backend:v1"
+    container_name: "backend_app"
+    ports: 
+      - "3000:3000"
+    environment:
+      MONGSTR: "mongodb+srv://Anirban:123@cluster0.wpm5aqp.mongodb.net/Keeper"
+      JWTPWD: "anirbanjwt12345"
+      CLOUD_NAME: "dy8devofq"
+      CLOUD_API_KEY: "253592492228785"
+      CLOUD_API_SECRET: "J8vJcR214hx0BvafUX0LdWmVF3Y" 
+    stdin_open: true
+    tty: true
+  frontend:
+    build: .
+    container_name: "frontend_app"
+    ports: 
+      - "5173:5173"
+    environment:
+      VITE_url: "http://localhost:3000"
+    depends_on: 
+      - "backend"
+    volumes: 
+      - "./src:/frontend_app/src"
+    command: "npm run dev"
+    stdin_open: true
+    tty: true

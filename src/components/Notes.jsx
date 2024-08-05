@@ -12,7 +12,7 @@ import {useNavigate} from "react-router-dom"
 export default function Notes({notessearch})
 {
    const navigate = useNavigate()
-    const url=import.meta.env.VITE_url+"/api/"
+    const url=(import.meta.env.VITE_url || "http://localhost:3000")+"/api/"
     const [title,setTitle]=useState("");
     const [note,setNote]=useState("");
     console.log(notessearch)
