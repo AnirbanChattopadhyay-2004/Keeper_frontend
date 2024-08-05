@@ -6,11 +6,11 @@ services:
     ports: 
       - "3000:3000"
     environment:
-      MONGSTR: "mongodb+srv://Anirban:123@cluster0.wpm5aqp.mongodb.net/Keeper"
-      JWTPWD: "anirbanjwt12345"
-      CLOUD_NAME: "dy8devofq"
-      CLOUD_API_KEY: "253592492228785"
-      CLOUD_API_SECRET: "J8vJcR214hx0BvafUX0LdWmVF3Y" 
+      MONGSTR: "your mongo string"
+      JWTPWD: "jwt pwd"
+      CLOUD_NAME: "your cloud name"
+      CLOUD_API_KEY: "your cloud api key"
+      CLOUD_API_SECRET: "your cloud api secret" 
     stdin_open: true
     tty: true
   frontend:
