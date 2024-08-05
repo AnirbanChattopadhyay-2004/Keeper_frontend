@@ -13,3 +13,8 @@ npm install
 ## ``` VITE_url="http://localhost:3000" ```
 # Running the File Locally on System
 ## ``` npm run dev ```
+# To run frontend only
+## ```docker build -t image_name .```
+## ```docker run -it -p 5173:5173 image_name```
+# OR Using docker-compose file
+## ```docker-compose up --build ```
